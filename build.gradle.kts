@@ -10,6 +10,14 @@ plugins {
     alias(libs.plugins.kotlin.parcelize) apply false
     alias(libs.plugins.dependencyUpdates) apply false
     alias(libs.plugins.compose.compiler) apply false
+    id("org.sonarqube") version "7.3.1.8318"
+}
+
+sonar {
+  properties {
+    property("sonar.projectKey", "wenhan-sqc-org_kmp-production-sample")
+    property("sonar.organization", "wenhan-sqc-org")
+  }
 }
 
 allprojects {
