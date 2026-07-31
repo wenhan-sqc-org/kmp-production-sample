@@ -50,6 +50,8 @@ kotlin {
             //DI
             implementation(libs.koin.core)
             implementation(libs.koin.android)
+            //Network
+            implementation(libs.ktor.client.okhttp)
             //WorkManager
             implementation(libs.work.runtime.ktx)
             //Splash
